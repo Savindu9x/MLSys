@@ -20,8 +20,9 @@ Edit Out the OpenAI API Key and Weaviate API Key
 ctrl+s to save, ctrl+x to exit
 
 > nohup python3 -m streamlit run app.py
+> echo $! > save_pid.txt
 
-
-> ps aux
+kill the running application
+> ps -ef | grep "nohup python3 -m streamlit run app.py --server.port=8501"
 > sudo su
 > kill pid
