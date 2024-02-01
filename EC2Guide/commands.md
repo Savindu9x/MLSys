@@ -1,19 +1,28 @@
 
 gets into root user
-> sudo su
+```bash
+sudo su
+```
 
-> yum update
+```bash
+yum update
+```
 
-> yum install git
-> yum install python3-pip
-
-> git clone https://savindu9x/git-repo.git
-
-> ls
-  
-> cd <directory>
-
-> python3 -m pip install -r requirements.txt
+```bash
+yum install git
+```
+```bash
+git clone https://savindu9x/MLSys.git
+```
+```bash
+ls
+```
+```bash
+cd streamlitAPpp
+```
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 Edit Out the OpenAI API Key and Weaviate API Key
 > nano app.py
