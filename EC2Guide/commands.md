@@ -5,7 +5,7 @@ sudo su
 ```
 
 ```bash
-yum update
+sudo yum update -y
 ```
 
 ```bash
