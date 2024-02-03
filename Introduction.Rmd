@@ -1,0 +1,29 @@
+```{r}
+x <- 4
+cat("Area of the circle is", pi*x**2)
+```
+```{r}
+heights = c(157, 161, 123, 144, 156, 177)
+mean(heights)
+```
+```{r}
+# The population variance can be calculated by multiplying the sample variance by (n-1)/n as follows.
+n <- length(heights)
+var(heights)*(n-1)/n
+```
+```{r}
+# concat two strings
+string1 = "Hello"
+string2 = "R"
+paste(string1, string2)
+```
+
+
+```{r}
+plot(cars)
+```
+
+```{r}
+fib <- c(0,1,1,2,3,5,8,13,21,34)
+print(fib)
+```
