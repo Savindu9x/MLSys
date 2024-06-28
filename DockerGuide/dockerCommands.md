@@ -35,4 +35,8 @@ docker rm $(docker ps -a -q)
 ```bash
 docker pull savindu9x/devopsAI:latest
 ```
+```bash
+docker save -o filename.tar docker_image:latest
+```
+
 
