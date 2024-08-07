@@ -71,3 +71,20 @@ def listBuckets():
             print('errorMessage:', resp.errorMessage)
     except:
         print(traceback.format_exc())
+
+
+def uploadData(obsClient):
+    """upload file from local storage"""
+    
+    bucket_name = 'sample-docs'
+    file_name = 'sample.txt'
+    file_path = 'D:\Documents\sample.txt'
+    resp = obsClient.putFile(bucket_name, file_name, file_path)
+    if resp.status < 300:    
+        # Return the request ID.
+        print('requestId:', resp.requestId)
+    else:    
+        # Return the error code.
+        print('errorCode:', resp.errorCode)
+        # Return error information.
+        print('errorMessage:', resp.errorMessage)
